@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #e5e5e5;
+  --subtext-color: #bec8d8;
+  --text-color: #093366;
+  --bg-card: #ffffff;
+  --bord-color: #f2f7fe;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+.carousel {
+  background-color: var(--bg-color);
+  overflow: hidden;
+  /* position: relative; */
+  padding: 9.7rem 0 7.7rem 12.2rem;
+}
+
+.carousel-header {
+  align-items: center;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel__title {
+  font-family: "Inter", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.8rem;
+}
+
+.carousel-button__prev,
+.carousel-button__next {
+  border: none;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  outline-color: var(--text-color);
+}
+
+.carousel-button__prev:hover {
+}
+.carousel-button__next :hover {
+}
+
+.carousel-products {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-products::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-products__card {
+  background: var(--bg-card);
+  border: none;
+  border-radius: 0.5rem;
+  flex: 0 0 auto;
+  height: 23.5rem;
+  padding: 3.376rem 2.2rem 1.5rem 2.096rem;
+  width: 31.5rem;
+  margin-right: 2.5rem;
+}
+
+.carousel-products:nth-last-child(n) {
+  margin-right: 0px;
+}
+
+.carousel-products__card__content {
+  border-bottom: 1px solid var(--bord-color);
+  font-family: "inter" sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  padding-bottom: 3.3rem;
+}
+
+.carousel-products__card__timeline {
+  color: var(--subtext-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2.5rem 4rem;
+  margin-top: 1.5rem;
+}
+.carousel-products__card__timeline--image {
+  background: url(../img/time-clock.png) no-repeat;
+  background-position: left;
+  background-position-x: 0.2rem;
+}
