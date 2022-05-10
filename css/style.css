@@ -40,11 +40,6 @@ body {
   outline-color: var(--text-color);
 }
 
-.carousel-button__prev:hover {
-}
-.carousel-button__next :hover {
-}
-
 .carousel-products {
   display: flex;
   justify-content: space-between;
