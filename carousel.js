@@ -1,30 +1,19 @@
-const carousel = document.querySelectorAll(
-  '[data-carousel="carousel-products"]'
-);
-const nextButton = document.querySelector(
+const carousel = document.querySelectorAll(".carousel-products");
+const nextButton = document.querySelectorAll(
   '[data-carousel="carousel-button__next"]'
 );
-const prevButton = document.querySelector(
+const prevButton = document.querySelectorAll(
   '[data-carousel="carousel-button__prev"]'
 );
 
-let currentCarousel = 0;
+carousel.forEach((item, i) => {
+  let carouselSize = item.getBoundingClientRect();
+  let carouselWidth = carouselSize.width / 4;
 
-nextButton.addEventListener("click", (currentCarousel) => {
-  carousel.forEach((slide) => {
-    currentCarousel++;
-    let carouselSize = slide.getBoundingClientRect();
-    let carouselWidth = carouselSize.width;
-    slide.scrollLeft += carouselWidth;
+  nextButton[i].addEventListener("click", () => {
+    item.scrollLeft += carouselWidth;
   });
-  slide[currentCarousel];
+  prevButton[i].addEventListener("click", () => {
+    item.scrollLeft -= carouselWidth;
+  });
 });
-
-// carousel.forEach((item, i) => {
-//   let carouselSize = item.getBoundingClientRect();
-//   let carouselWidth = carouselSize.width;
-//   currentCarousel[i];
-//   nextButton.addEventListener("click", () => {
-//     item.scrollLeft += carouselWidth;
-//   });
-// });

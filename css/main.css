@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #e5e5e5;
+  --subtext-color: #bec8d8;
+  --text-color: #093366;
+  --bg-card: #ffffff;
+  --bord-color: #f2f7fe;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
