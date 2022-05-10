@@ -92,3 +92,29 @@ body {
   background-position: left;
   background-position-x: 0.2rem;
 }
+
+/*mobile*/
+@media screen and (max-width: 360px) {
+  .carousel {
+    overflow: hidden;
+    padding: 1rem;
+  }
+
+  .carousel-header {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    justify-content: center;
+  }
+  .carousel__title {
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+
+  .carousel-products__card {
+    flex: none;
+    height: 23.5rem;
+    margin-right: 1rem;
+  }
+}
